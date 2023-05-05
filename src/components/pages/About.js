@@ -1,18 +1,19 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
 import React from "react";
-import "../assets/css/about-me.css";
-import profilePhoto from "../assets/images/photo.png";
-import SkillsGridCol from "./SkillsGridCol";
-import Skill from "./Skill";
-import { languages, frameworks, otherTech } from "../assets/data";
+import "../../assets/css/about-me.css";
+import profilePhoto from "../../assets/images/photo.png";
+import SkillsGridCol from "../SkillsGridCol";
+import Skill from "../Skill";
+import { languages, frameworks, otherTech } from "../../assets/data";
 
 const About = () => {
   return (
-    <div class="portfolio-section" id="about-me-section">
-      <div class="flex content-center">
-        <h2 class="section-header">About Me</h2>
+    <div className="portfolio-section" id="about-me-section">
+      <div className="flex content-center">
+        <h2 className="section-header">About Me</h2>
       </div>
       <section id="about-me">
-        {/* <!-- Profile picutre --> */}
+        {/* <!-- Profile picture --> */}
         <figure id="profile-photo">
           <img src={profilePhoto} alt="Profile picture" />
         </figure>

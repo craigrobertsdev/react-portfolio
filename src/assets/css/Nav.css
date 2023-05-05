@@ -1,0 +1,29 @@
+nav {
+  grid-column: 1/3;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--text-color);
+  transition: color 0.2s;
+}
+
+.link:hover {
+  color: #fff;
+}
+
+.selected {
+  font-size: 1.1rem;
+  font-weight: bolder;
+}
+
+p {
+  font-size: 1.1rem;
+}
+
+nav {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
