@@ -1,0 +1,156 @@
+.portfolio-section {
+  padding: 0 3rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.content-center {
+  justify-content: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+#about-me {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+#about-me-text-container > p {
+  margin-bottom: 1rem;
+  padding: 0 1rem 1rem 1rem;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+#about-me-text-container .skills-grid {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+}
+
+#profile-photo img {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  opacity: 0.85;
+}
+
+.skills-grid p {
+  grid-column: 1/2;
+  font-size: 1.4rem;
+  text-decoration: underline;
+  padding: 1rem 1rem 0 1rem;
+  margin-bottom: 1rem;
+}
+
+.skills-grid ul {
+  text-align: center;
+  grid-column: 2/3;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.skill-header {
+  display: flex;
+  text-align: center;
+}
+
+.skills-grid li,
+.technologies li {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+/* Change Express.js icon from black to white   */
+.express {
+  filter: invert(100%);
+}
+
+@media only screen and (max-width: 1300px) {
+  /* reduce size of profile photo */
+  #profile-photo img {
+    width: 200px;
+    height: 200px;
+  }
+
+  #about-me {
+    display: block;
+  }
+
+  #profile-photo {
+    float: left;
+    margin: 0 1rem 1rem 0;
+  }
+
+  #about-me-text-container {
+    float: none;
+    text-align: justify;
+  }
+
+  .skills-grid {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #profile-photo img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .skills-grid {
+    gap: 0;
+  }
+
+  .skills-grid p {
+    display: flex;
+    align-items: center;
+  }
+
+  .skills-grid {
+    grid-template-rows: repeat(6, auto);
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .skills-grid p {
+    grid-column: 1/-1;
+    padding: 0;
+    justify-content: center;
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+
+  .skills-grid ul {
+    grid-column: 1/-1;
+    justify-content: center;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #about-me-text-container > P {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  #profile-photo {
+    float: none;
+  }
+
+  #profile-photo img {
+    display: block;
+    margin: auto;
+  }
+}

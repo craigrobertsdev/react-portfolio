@@ -1,7 +1,7 @@
 import React from "react";
 
-const Nav = () => {
+const Contact = () => {
   return <div></div>;
 };
 
-export default Nav;
+export default Contact;

@@ -1,13 +1,64 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400&display=swap");
+
+:root {
+  --text-color: #ddd;
+  --light-grey: #bbb;
+  --dark-green: #61892f;
+  --green: #8fd42e;
+  --black-grey: #222629;
+  --dark-grey: #474b4f;
+  --grey: #6b6e70;
+  --text-color-hover: #adabab;
+  --grey-hover: #777777;
+
+  /* hamburger menu variables */
+  --bar-width: 40px;
+  --bar-height: 8px;
+  --hamburger-gap: 6px;
+  --hamburger-margin: 15px;
+  --animation-timing: 200ms ease-in-out;
+  --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
+
+  /* Possible colors for future restructure 
+  --dark-purple: #6f00ff;
+  --yellow: #fdee00;
+  --black: #050505; */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+html {
+  background: var(--black-grey);
+  color: var(--text-color);
+  scroll-behavior: smooth;
+}
+
+#background-image {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  filter: grayscale(100%);
+  opacity: 0.1;
+}
+
+.bg-dark {
+  background-color: var(--dark-grey);
+}
+
+.section-header {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  font-size: 2rem;
+  color: var(--green);
+  margin-bottom: 2rem;
+  border-bottom: 2px solid var(--dark-green);
+  width: calc(100% - 2rem);
 }
