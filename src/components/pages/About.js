@@ -12,7 +12,7 @@ const About = () => {
       <div className="flex content-center">
         <h2 className="section-header">About Me</h2>
       </div>
-      <section id="about-me">
+      <section id="about-me" className="section">
         {/* <!-- Profile picture --> */}
         <figure id="profile-photo">
           <img src={profilePhoto} alt="Profile picture" />
@@ -45,17 +45,17 @@ const About = () => {
           <div className="skills-grid">
             <SkillsGridCol headingText={"Languages"}>
               {languages.map((skill, index) => (
-                <Skill skillName={skill.skillName} imageUrl={skill.imageUrl} key={index} />
+                <Skill technology={skill} key={index} />
               ))}
             </SkillsGridCol>
             <SkillsGridCol headingText={"Frameworks"}>
               {frameworks.map((skill, index) => (
-                <Skill skillName={skill.skillName} imageUrl={skill.imageUrl} key={index} />
+                <Skill technology={skill} key={index} />
               ))}
             </SkillsGridCol>
             <SkillsGridCol headingText={"Other Technologies"}>
               {otherTech.map((skill, index) => (
-                <Skill skillName={skill.skillName} imageUrl={skill.imageUrl} key={index} />
+                <Skill technology={skill} key={index} />
               ))}
             </SkillsGridCol>
           </div>

@@ -10,7 +10,7 @@ import Resume from "./components/pages/Resume";
 function App() {
   return (
     <div>
-      <img src={background} id="background-image" />
+      <img src={background} id="background-image" alt="Dark wavy lines" />
       <header>
         {/* <!-- Header and title --> */}
         <h1 className="flex items-center content-center">Craig Roberts</h1>
