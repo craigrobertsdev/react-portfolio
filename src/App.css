@@ -12,4 +12,15 @@ h2 {
   font-size: 2rem;
   color: var(--text-color);
   padding-bottom: 1rem;
+  text-align: center;
+}
+
+#app {
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+footer {
+  margin-top: auto;
 }

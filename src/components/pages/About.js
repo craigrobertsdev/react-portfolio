@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React from "react";
-import "../../assets/css/about-me.css";
+import "../../assets/css/About.css";
 import profilePhoto from "../../assets/images/photo.png";
 import SkillsGridCol from "../SkillsGridCol";
 import Skill from "../Skill";

@@ -12,18 +12,21 @@
   --text-color-hover: #adabab;
   --grey-hover: #777777;
 
-  /* hamburger menu variables */
-  --bar-width: 40px;
-  --bar-height: 8px;
-  --hamburger-gap: 6px;
-  --hamburger-margin: 15px;
-  --animation-timing: 200ms ease-in-out;
-  --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
-
   /* Possible colors for future restructure 
   --dark-purple: #6f00ff;
   --yellow: #fdee00;
   --black: #050505; */
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
 }
 
 * {
@@ -100,9 +103,41 @@ section div p,
   line-height: 1.5;
 }
 
-/* Change Express.js icon from black to white   */
+/* Change Express.js and Handlebars icon from black to white   */
 .express {
   filter: invert(100%);
+}
+
+footer .portfolio-section {
+  padding-bottom: 1rem;
+}
+
+footer {
+  margin-top: 2rem;
+}
+
+footer ul {
+  margin: 0 10%;
+  font-size: 1.2rem;
+  justify-content: center;
+  gap: 5%;
+  align-items: center;
+}
+
+/* Container for Linkedin and GitHub images, constrains image size */
+.image-container {
+  max-width: 40px;
+  max-height: 40px;
+}
+
+.image-container img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 1100px) {
+  footer ul {
+    margin: 0 5%;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -113,121 +148,7 @@ section div p,
 
   body {
     padding: 0;
-    padding-top: var(--hamburger-margin);
     margin: 0;
-  }
-
-  #position-indicator {
-    display: none;
-  }
-
-  .hamburger-menu {
-    display: initial;
-  }
-
-  /* hamburger menu */
-  .hamburger-menu {
-    --x-width: calc(var(--hamburger-height) * 1.41421356237);
-    display: flex;
-    flex-direction: column;
-    gap: var(--hamburger-gap);
-    width: max-content;
-    position: fixed;
-    top: var(--hamburger-margin);
-    left: var(--hamburger-margin);
-    z-index: 2;
-    cursor: pointer;
-  }
-
-  .hamburger-menu:has(input:checked) {
-    --foreground: var(--text-color);
-    --background: #333;
-  }
-
-  .hamburger-menu::before,
-  .hamburger-menu::after,
-  .hamburger-menu input {
-    content: "";
-    width: var(--bar-width);
-    height: var(--bar-height);
-    background-color: var(--light-grey);
-    border-radius: 9999px;
-    transform-origin: left center;
-    transition: opacity var(--animation-timing), width var(--animation-timing),
-      rotate var(--animation-timing), translate var(--animation-timing),
-      background-color var(--animation-timing);
-  }
-
-  .hamburger-menu:hover::before,
-  .hamburger-menu:hover::after,
-  .hamburger-menu:hover input {
-    background-color: var(--text-color);
-  }
-
-  .hamburger-menu input {
-    appearance: none;
-    padding: 0;
-    margin: 0;
-    outline: none;
-    pointer-events: none;
-  }
-
-  .hamburger-menu:has(input:checked)::before {
-    rotate: 45deg;
-    width: var(--x-width);
-    translate: 0 calc(var(--bar-height) / -2);
-  }
-
-  .hamburger-menu:has(input:checked)::after {
-    rotate: -45deg;
-    width: var(--x-width);
-    translate: 0 calc(var(--bar-height) / 2);
-  }
-
-  .hamburger-menu input:checked {
-    opacity: 0;
-    width: 0;
-  }
-
-  .closeIcon {
-    display: none;
-  }
-
-  .menu {
-    visibility: initial;
-    display: initial;
-    position: fixed;
-    width: 75%;
-    transform: translateX(-100%);
-    transition: transform 0.2s;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    background: var(--dark-grey);
-    z-index: 1;
-    list-style: none;
-    padding-top: 4.5rem;
-    padding-right: 1rem;
-  }
-
-  .menu li {
-    margin-top: 1rem;
-    text-align: center;
-  }
-
-  .menu li a {
-    font-size: 2rem;
-    font-weight: 600;
-    margin-left: 1rem;
-    color: var(--dark-green);
-  }
-
-  .menu li a:hover {
-    color: var(--green);
-  }
-
-  .hamburger-menu:has(input:checked) + .menu {
-    transform: translateY(0);
   }
 
   .project-description:nth-of-type(n) {
@@ -240,6 +161,12 @@ section div p,
 @media only screen and (max-width: 767px) {
   html {
     font-size: 14px;
+  }
+
+  /* Container for Linkedin and GitHub images, constrains image size */
+  .image-container {
+    max-width: 35px;
+    max-height: 35px;
   }
 }
 
@@ -268,5 +195,11 @@ section div p,
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     row-gap: 1rem;
+  }
+
+  /* Container for Linkedin and GitHub images, constrains image size */
+  .image-container {
+    max-width: 30px;
+    max-height: 30px;
   }
 }

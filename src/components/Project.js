@@ -21,8 +21,8 @@ const Project = ({ project, left }) => {
           <p>{project.description}</p>
         </div>
         <ul className="technologies flex content-center gap-2">
-          {project.technologies.map((technology) => (
-            <li>
+          {project.technologies.map((technology, index) => (
+            <li key={index}>
               <img
                 className={`${
                   technology.name === "Express.js" || technology.name === "Handlebars"
