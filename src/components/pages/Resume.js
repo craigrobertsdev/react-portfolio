@@ -1,4 +1,5 @@
 import React from "react";
+import "../../assets/css/Resume.css";
 
 const Resume = () => {
   // Function will execute on click of button
@@ -22,26 +23,34 @@ const Resume = () => {
       <div className="flex content-center">
         <h2 className="section-header">Projects</h2>
       </div>
-      <p>Front-end proficiencies</p>
-      <ul className="resume-skills">
-        <li>React</li>
-        <li>jQuery</li>
-        <li>ASP.Net Blazor</li>
-        <li>Bootstrap</li>
-        <li>Tailwind CSS</li>
-      </ul>
-      <p>Back-end proficiencies</p>
-      <ul className="resume-skills">
-        <li>Node.js</li>
-        <li>Express.js</li>
-        <li>C#</li>
-        <li>MySQL</li>
-        <li>MongoDB</li>
-      </ul>
-      <p>Download a copy of my resume here:</p>
-      <button className="button" onClick={handleDownload}>
-        Click to download
-      </button>
+      <div id="" className="flex content-center resume-skills">
+        <div>
+          <p>Front-end proficiencies</p>
+          <ul>
+            <li>React</li>
+            <li>jQuery</li>
+            <li>ASP.Net Blazor</li>
+            <li>Bootstrap</li>
+            <li>Tailwind CSS</li>
+          </ul>
+        </div>
+        <div>
+          <p>Back-end proficiencies</p>
+          <ul>
+            <li>Node.js</li>
+            <li>Express.js</li>
+            <li>C#</li>
+            <li>MySQL</li>
+            <li>MongoDB</li>
+          </ul>
+        </div>
+      </div>
+      <div className="flex content-center column resume-download">
+        <p>Download a copy of my resume here:</p>
+        <button className="button" onClick={handleDownload}>
+          Click to download
+        </button>
+      </div>
     </div>
   );
 };

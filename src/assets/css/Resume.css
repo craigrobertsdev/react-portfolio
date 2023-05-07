@@ -1,0 +1,21 @@
+.resume-skills {
+  width: 80%;
+  margin: 0 auto 3rem auto;
+  gap: 3rem;
+}
+
+.resume-skills p {
+  padding: 0;
+}
+
+.resume-skills ul {
+  line-height: 1.3rem;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.resume-download {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
