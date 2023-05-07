@@ -45,7 +45,7 @@ const Resume = () => {
           </ul>
         </div>
       </div>
-      <div className="flex content-center column resume-download">
+      <div className="flex items-center column resume-download">
         <p>Download a copy of my resume here:</p>
         <button className="button" onClick={handleDownload}>
           Click to download

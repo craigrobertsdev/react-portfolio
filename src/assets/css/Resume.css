@@ -6,16 +6,41 @@
 
 .resume-skills p {
   padding: 0;
+  text-decoration: underline;
+  font-size: 1.4rem;
+  text-align: center;
 }
 
 .resume-skills ul {
-  line-height: 1.3rem;
-  font-size: 1.1rem;
+  line-height: 1.5rem;
   text-align: center;
 }
 
+.resume-skills ul li {
+  font-size: 1.2rem;
+}
+
 .resume-download {
-  width: 50%;
   margin: auto;
   text-align: center;
+}
+
+.resume-download button {
+  width: max-content;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 991px) {
+  .resume-skills ul {
+    line-height: 1.2;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 610px) {
+  .resume-skills {
+    flex-direction: column;
+  }
 }
