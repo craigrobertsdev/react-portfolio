@@ -28,3 +28,20 @@ footer {
   border-top: 2px solid var(--dark-green);
   width: calc(100% - 8rem);
 }
+
+footer .portfolio-section {
+  padding-bottom: 1rem;
+}
+
+footer ul {
+  margin: 0 10%;
+  font-size: 1.2rem;
+  justify-content: center;
+  gap: 1.2rem;
+  align-items: center;
+}
+
+.image-container img {
+  height: 2.5rem;
+  width: 2.5rem;
+}

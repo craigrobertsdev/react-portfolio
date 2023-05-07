@@ -7,6 +7,7 @@ import Projects from "./components/pages/Projects";
 import Contact from "./components/pages/Contact";
 import Resume from "./components/pages/Resume";
 import githubIcon from "./assets/images/github.svg";
+import stackOverflowIcon from "./assets/images/stack-overflow.svg";
 
 const App = () => {
   return (
@@ -44,6 +45,16 @@ const App = () => {
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
                     alt="LinkedIn Icon"
                   />
+                </a>
+              </div>
+            </li>
+            <li>
+              <div className="image-container">
+                <a
+                  href="https://stackoverflow.com/users/19259279/cr-dev"
+                  target="_blank"
+                  rel="noreferrer">
+                  <img src={stackOverflowIcon} alt="Stack Overflow Icon" />
                 </a>
               </div>
             </li>

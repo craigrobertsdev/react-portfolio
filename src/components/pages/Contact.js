@@ -50,6 +50,7 @@ const Contact = () => {
     if (!value) {
       setErrorMessage("An email address is required.");
       setErrorMessageHidden("");
+      return;
     }
 
     const validEmail = value.match(

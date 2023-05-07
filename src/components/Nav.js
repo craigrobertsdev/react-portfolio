@@ -3,7 +3,7 @@ import "../assets/css/Nav.css";
 import { Link } from "react-router-dom";
 
 const Nav = () => {
-  const [current, setCurrent] = useState("");
+  const [current, setCurrent] = useState();
 
   // on page load, highlight the appropriate header link. Done this way to ensure correct highlighting when page is refreshed while on a page other than home.
   useEffect(() => {
