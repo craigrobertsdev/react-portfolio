@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.ef5c6d1d.css",
-    "main.js": "/react-portfolio/static/js/main.bfe2e589.js",
+    "main.js": "/react-portfolio/static/js/main.02ac3a94.js",
     "static/media/mechanomicon.jpg": "/react-portfolio/static/media/mechanomicon.90ff6c35665d82250e52.jpg",
     "static/media/background-image.jpg": "/react-portfolio/static/media/background-image.aa4cfa0cdb04793e55c8.jpg",
     "static/media/mechanomicon-sm.jpg": "/react-portfolio/static/media/mechanomicon-sm.2a1a63b81eaeb250f483.jpg",
@@ -22,10 +22,10 @@
     "index.html": "/react-portfolio/index.html",
     "static/media/stack-overflow.svg": "/react-portfolio/static/media/stack-overflow.e3db5ec4b504809b8dea5379b5cc8834.svg",
     "main.ef5c6d1d.css.map": "/react-portfolio/static/css/main.ef5c6d1d.css.map",
-    "main.bfe2e589.js.map": "/react-portfolio/static/js/main.bfe2e589.js.map"
+    "main.02ac3a94.js.map": "/react-portfolio/static/js/main.02ac3a94.js.map"
   },
   "entrypoints": [
     "static/css/main.ef5c6d1d.css",
-    "static/js/main.bfe2e589.js"
+    "static/js/main.02ac3a94.js"
   ]
 }
