@@ -22,7 +22,7 @@ This project has provided significant experience in managing state, on-load effe
 This application is deployed via GitHub Pages at https://craigrobertsdev.github.io/react-portfolio/#/.
 
   <p align="center">
-  <img src="https://github.com/craigrobertsdev/react-portfolio/blob/main/assets/images/screenshot.png">
+  <img src="https://github.com/craigrobertsdev/react-portfolio/blob/main/src/assets/images/screenshot.png">
   </p>
 
 ## Questions
