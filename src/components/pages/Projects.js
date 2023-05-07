@@ -1,6 +1,6 @@
 import React from "react";
 import Project from "../Project";
-import { projects } from "../../assets/data";
+import { projects } from "../../utils/data";
 import "../../assets/css/Projects.css";
 
 const Projects = () => {

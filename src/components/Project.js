@@ -38,13 +38,13 @@ const Project = ({ project, left }) => {
         </ul>
         <ul className="project-access flex content-center gap-2 button-row">
           <li>
-            <a href={project.github} rel="noreferrer" target="_blank">
+            <a href={project.github} className="button" rel="noreferrer" target="_blank">
               GitHub
             </a>
           </li>
           {project.deployed && (
             <li>
-              <a href={project.deployed} rel="noreferrer" target="_blank">
+              <a href={project.deployed} className="button" rel="noreferrer" target="_blank">
                 Deployed App
               </a>
             </li>

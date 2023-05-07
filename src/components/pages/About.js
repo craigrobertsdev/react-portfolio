@@ -4,7 +4,7 @@ import "../../assets/css/About.css";
 import profilePhoto from "../../assets/images/photo.png";
 import SkillsGridCol from "../SkillsGridCol";
 import Skill from "../Skill";
-import { languages, frameworks, otherTech } from "../../assets/data";
+import { languages, frameworks, otherTech } from "../../utils/data";
 
 const About = () => {
   return (

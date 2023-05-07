@@ -113,7 +113,7 @@ const Contact = () => {
             name="message"
             type="text"
           />
-          <button className="submit-button">Submit</button>
+          <button className="button">Submit</button>
         </form>
         <p id="error-message" className={errorMessageHidden}>
           {errorMessage}

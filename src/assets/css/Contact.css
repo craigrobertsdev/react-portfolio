@@ -45,17 +45,6 @@ label {
   height: 9rem;
 }
 
-.submit-button {
-  font-size: 1.4rem;
-  color: var(--green);
-  padding: 5px;
-  background: var(--dark-grey);
-  border: 1px solid var(--grey);
-  border-radius: 7px;
-  cursor: pointer;
-  transition: text-shadow, box-shadow 0.2s;
-}
-
 @media only screen and (max-width: 1500px) {
   .contact-section {
     width: 65%;

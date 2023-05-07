@@ -134,6 +134,24 @@ footer ul {
   width: 100%;
 }
 
+.button {
+  font-size: 1.4rem;
+  color: var(--green);
+  text-decoration: none;
+  padding: 5px;
+  background: var(--dark-grey);
+  border: 1px solid var(--grey);
+  border-radius: 7px;
+  cursor: pointer;
+  transition: text-shadow, box-shadow 0.2s;
+}
+
+.button:hover {
+  text-shadow: 0.5px 0.5px 0.5px var(--dark-green);
+  box-shadow: inset 50px 50px 50px 50px #6b6e7055;
+  color: var(--green);
+}
+
 @media only screen and (max-width: 1100px) {
   footer ul {
     margin: 0 5%;
