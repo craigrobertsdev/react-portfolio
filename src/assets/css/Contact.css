@@ -16,5 +16,21 @@ label {
   font-size: 1.2rem;
 }
 
+.form-gap {
+  gap: 0.5rem;
+}
+
+#error-message {
+  color: #cc0000;
+}
+
+#message-submitted {
+  color: var(--green);
+}
+
+.hidden {
+  display: none;
+}
+
 @media only screen and (max-width: 600px) {
 }

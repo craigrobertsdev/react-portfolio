@@ -13,6 +13,7 @@
 #about-me {
   display: grid;
   grid-template-columns: 1fr 4fr;
+  margin-bottom: 2rem;
 }
 
 #about-me-text-container > p {
